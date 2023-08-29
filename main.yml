@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@master
       - name: upload to s3
         run: |
-          aws s3 cp .github/workflows/Diksha.txt s3://githubtos3vishal/myfolder/
+          aws s3 cp .github/workflows/diksha.txt s3://githubactiondiksha/Folder/
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
