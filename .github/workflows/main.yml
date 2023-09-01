@@ -15,7 +15,7 @@ jobs:
       - name: Deploy CloudFormation stack for bucket
         run: |
           aws cloudformation deploy \
-            --stack-name yelpstack \
+            --stack-name yelpstack1 \
             --template-file .github/workflows/createbucket.yml \
             --capabilities CAPABILITY_NAMED_IAM
         env:
@@ -30,7 +30,7 @@ jobs:
     steps:
       - name: Upload to S3
         run: |
-          aws s3 cp ".github/workflows/diksha.txt" "s3://yelptemp1/"
+          aws s3 cp .github/workflows/diksha.txt s3://yelptemp1/
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

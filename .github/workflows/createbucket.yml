@@ -5,4 +5,4 @@ Resources:
   Yelpinbucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: 'yelp-input-data'
+      BucketName: 'yelp-input-data1'
