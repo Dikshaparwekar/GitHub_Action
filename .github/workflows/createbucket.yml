@@ -1,8 +1,8 @@
-AWSTemplateFormatVersion: "2010-09-09"
-Description: "aws glue job, glue trigger, glue workflow, glue crawler, s3 buckets creation test"
+AWSTemplateFormatVersion: '2010-09-09'
+Description: CloudFormation template to create an S3 bucket
 
 Resources:
-  Yelpinbucket:
+  MyS3Bucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: 'yelp-input-data1'
+      BucketName: dikshabuc1
