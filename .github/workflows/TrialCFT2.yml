@@ -30,7 +30,7 @@ Resources:
     Type: AWS::Glue::Workflow
     Properties:
       Description: 'Create workflow'
-      MaxConcurrentRuns: 1
+      MaxConcurrentRuns: 3
       Name: 'yelpworkflow'
 
   WorkflowJob:
