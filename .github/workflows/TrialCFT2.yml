@@ -39,7 +39,7 @@ Resources:
       Role: arn:aws:iam::837978405173:role/LabRole
       Command:
         Name: 'glueetl'
-        ScriptLocation: 's3://project-bigdata1/script.py'  # Change the path
+        ScriptLocation: 's3://glue-script12/script.py'  # Change the path
       ExecutionProperty:
         MaxConcurrentRuns: 1
       Name: 'data-cleaning'
