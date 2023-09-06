@@ -127,7 +127,7 @@ Resources:
 
 
 
-Outputs:
-  WorkflowLambdaArn:
-    Description: 'ARN of the AWS Lambda function for the workflow'
-    Value: !GetAtt WorkflowLambda.Arn
+# Outputs:
+#   WorkflowLambdaArn:
+#     Description: 'ARN of the AWS Lambda function for the workflow'
+#     Value: !GetAtt WorkflowLambda.Arn
