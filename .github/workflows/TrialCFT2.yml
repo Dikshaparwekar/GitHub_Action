@@ -125,21 +125,7 @@ Resources:
             State: SUCCEEDED
       WorkflowName: !Ref WorkflowYelp
 
-  # AthenaConnection:
-  #   Type: AWS::Athena::NamedQuery
-  #   Properties:
-  #     Name: 'AthenaConnectionToYelpDatabase'
-  #     Description: 'Athena connection to the Yelp Glue database'
-  #     Database: 'yelpdatabase'  # Name of your Glue database
-  #     QueryString:
-  #       Fn::Sub:
-  #         - |
-  #           SELECT * FROM business_final;
-  #           SELECT * FROM tips_final;
-  #           SELECT * FROM checkin_final;
-  #           SELECT * FROM review_final;
-  #           SELECT * FROM user_final;
-  #         - {}
+
 
 Outputs:
   WorkflowLambdaArn:
